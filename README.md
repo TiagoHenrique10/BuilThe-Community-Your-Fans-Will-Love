@@ -21,8 +21,9 @@ Veja os estados de foco para todos os elementos interativos na página
 
 
 ### Design desktop:
-
+![desktop-design](https://user-images.githubusercontent.com/96561261/190497749-27b3a970-c1a8-402e-b657-7c62d451ae3e.jpg)
 ### Design mobile:
-
+![mobile-design](https://user-images.githubusercontent.com/96561261/190497754-c942fc9c-646e-48d0-8bcb-574c3b588294.jpg)
 ### Design active-states:
+![active-states](https://user-images.githubusercontent.com/96561261/190497743-ef1d6bf9-1d95-4007-9ee5-600279352b06.jpg)
 
