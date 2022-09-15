@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #211442;
+    min-height: 100vh;
+}
+
+.conteiner {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.content {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 0;
+    margin: 0 2rem;
+    
+}
+
+.logo img {
+    width: 190px;
+    padding-bottom: 20px;
+    transform: translateY(-100%);
+    animation: comeinright 0.9s ease forwards;
+}
+
+/* Estilizando texto */
+
+.descricao {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    transform: translateY(-100%);
+    animation: comeinright 0.9s ease forwards;
+} 
+
+.hero-text h1 {
+    color: #F5F5F5;
+    font-family: 'Poppins';
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.hero-text p {
+    color: #F5F5F5;
+    font-family: 'Open Sans';
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.hero-text a {
+    font-size: 20px;
+}
+
+/* Estilizando botão */
+
+.register {
+    position: relative;
+    display: inline-block;
+    padding: 25px 61px;
+    border-radius: 40px;
+    color: #EBEB1E;
+    text-decoration: none;   
+    overflow: hidden;
+    margin: 25px;
+    font-family: "Poppins";
+    filter: hue-rotate(0deg);
+    border: 2px solid #d2bdfffd;
+    transition: all 0.3s linear;
+    letter-spacing: 2px; 
+}
+
+.register:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    font-weight: 600;
+    border-radius: 40px;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: #ebeb1ed0;
+    transition: all 0.3s ease;
+}
+
+.register:hover{
+    color: #211442;
+    font-weight: 600;
+}
+
+.register:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.register:active {
+    top: 2px;
+}
+
+/* Estilizando rede social */
+
+.rede-social {
+    display:inline-flex;
+    justify-content: right;
+    letter-spacing: 5px;
+    transform: translateY(-100%);
+    animation: comeinright 0.9s ease forwards;  
+}
+
+.rede-social a {
+    position: relative;
+    border-radius: 40px;
+    padding: 15px;
+    margin: 10px;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid #fff;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.rede-social i {
+    color: #fdfdfd;
+    transition: all 0.3s ease;
+}
+
+.rede-social i:hover {
+    color: hsl(300, 69%, 71%);
+    transition: all 0.3s ease;
+}
+
+.rede-social a:hover {
+    border-color: hsl(300, 69%, 71%);
+    transition: all 0.3s ease;
+}
+
+.fab {
+    margin-left: 5px;
+}
+
+/* Estilizando animação */
+
+@keyframes comeinleft {
+    to { 
+        transform: translateX(0);
+    }
+}
+
+@keyframes comeinright {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 
+
+/* Estilizando modo mobile */
+
+@media only screen and (max-width:1440px) {
+    .hero-img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .descricao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+       font-size: 33px; 
+    }
+
+    .hero-text p {
+        font-size: 22px;
+    }
+
+    .rede-social {
+        display: inline-flex;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .hero-text a {
+        padding: 10px 90px;
+    }
+
+    .logo img {
+        width: 140px;
+        padding-bottom: 90px;
+    }
+}
